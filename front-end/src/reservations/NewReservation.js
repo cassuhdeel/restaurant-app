@@ -167,7 +167,7 @@ export default function NewReservation({ loadDashboard, edit }) {
   }
 
   const errorsResult = () => {
-    return errors.map((error, idx) => <ErrorAlert key={idx} error={error} />);
+    return errors.map((error) => <ErrorAlert key={new Date().getTime()} error={error} />);
   };
 
   return (
