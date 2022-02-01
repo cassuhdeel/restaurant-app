@@ -86,7 +86,7 @@ export default function SeatReservation({ tables, loadDashboard }) {
   };
 
   const errorsResult = () => {
-    return errors.map((error, idx) => <ErrorAlert key={idx} error={error} />);
+    return errors.map((error) => <ErrorAlert key={new Date().getTime()} error={error} />);
   };
 
   return (
